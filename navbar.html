@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="components.css" />
+    <style type="text/css">
+      * {
+        text-decoration: none;
+      }
+      .navbar {
+        background-color: rgb(16, 80, 51);
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo a {
+        font-size: 50px;
+        font-weight: 600;
+        color: whitesmoke;
+        margin-left: 10px;
+      }
+      .logo img {
+        height: 50px; 
+        margin-right: 10px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      li a {
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 50px;
+      }
+      button {
+        background-color: rgb(255, 255, 255);
+        margin-left: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        width: 90px;
+      }
+      button a {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    </style>
+    <style type="text/css">
+      .logo {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="btn navbar">
+      <div class="btn navdiv">
+        <div class="btn logo">
+          <img src="logo-no-background.png" alt="Logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
