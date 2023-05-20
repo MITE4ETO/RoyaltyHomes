@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="components.css" />
+    <script defer src="starting.js"></script>
     <style type="text/css">
       * {
         text-decoration: none;
@@ -19,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 40px;
       }
       .logo {
         display: flex;
@@ -31,7 +33,7 @@
         margin-left: 10px;
       }
       .logo img {
-        height: 50px; 
+        height: 50px;
         margin-right: 10px;
       }
       li {
@@ -70,19 +72,21 @@
     </style>
   </head>
   <body>
-    <nav class="btn navbar">
-      <div class="btn navdiv">
-        <div class="btn logo">
-          <img src="logo-no-background.png" alt="Logo" />
+    <header>
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo">
+            <img src="logo-no-background.png" alt="Logo" />
+          </div>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#favourites">Favourites</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   </body>
 </html>
