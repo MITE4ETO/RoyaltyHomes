@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="components.css" />
-    <script defer src="starting.js"></script>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,7 +56,6 @@
       }
       button {
         background-color: rgb(255, 255, 255);
-        margin-left: 10px;
         border-radius: 10px;
         padding: 10px;
         width: 90px;
@@ -103,7 +102,7 @@
           <ul>
             <li>
               <a href="#home">Home</a>
-              <a href="#about">About</a>
+              <a href="#about" id="about">About</a>
               <a href="#favourites">Favourites</a>
             </li>
           </ul>
@@ -126,9 +125,8 @@
               <p>
                 Crowning a 14-acre plateau in the picturesque hills of Rancho
                 Santa Fe’s exclusive Covenant, this iconic, gated sanctuary is
-                graced with rare 270° ocean and mountain views.
-                Without sound pollution. Free wine included :D :D
-
+                graced with rare 270° ocean and mountain views. Without sound
+                pollution. Free wine included :D :D
               </p>
 
               <div class="flex-group">
@@ -152,7 +150,9 @@
             <div class="overview__content">
               <p class="overview__category">Hottest pick right now</p>
 
-              <h1 class="product__title">4900 N Grand Ave Unit 351, United States</h1>
+              <h1 class="product__title">
+                4900 N Grand Ave Unit 351, United States
+              </h1>
 
               <p>
                 Great starter home in the heart of Covina!! Wonderful two
@@ -189,7 +189,9 @@
               <p>
                 The front of the house boasts 3 nice size bedrooms and 2 full
                 bathrooms. The back of the house has 1 bedroom, a full bath,
-                kitchen and living area. As you enter you'll find tons of natural light. the living room features a fireplace and wood laminate flooring throughout.
+                kitchen and living area. As you enter you'll find tons of
+                natural light. the living room features a fireplace and wood
+                laminate flooring throughout.
               </p>
 
               <div class="flex-group">
@@ -221,7 +223,8 @@
                 The perfect farmette with a beautifully renovated farmhouse
                 located on 1.46 acres with mountain views and a stream to enjoy!
                 Inviting enclosed front porch with lots of natural light to
-                enjoy! Amazing home without surronding neighbours for you, our special clients.
+                enjoy! Amazing home without surronding neighbours for you, our
+                special clients.
               </p>
 
               <div class="flex-group">
@@ -240,5 +243,23 @@
         </div>
       </main>
     </header>
+    <div class="modal" id="modal">
+      <div class="modal-body">
+        <div class="modal-header">
+          <p class="modal-header-about">About</p>
+          
+        </div>
+        <div class="modal-content">
+          <p class="modal-content-text">Find your dream home hassle-free
+            Our platform offers various marketing tools, including professional photography, virtual tours, and staging tips, to maximize your property's appeal.
+            Browse through our extensive collection of properties, including homes, apartments, condos, and commercial spaces.</p> 
+          </div>
+          <div class="modal-footer">
+            <img class="modal-footer-image" src="images/logo-no-background.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
   </body>
 </html>
