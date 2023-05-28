@@ -90,20 +90,32 @@
       .overview__content {
         margin-top: 20px;
       }
+      .favourites:after{
+        content: attr(value);
+        font-size: 16px;
+        color: #fff;
+        background: red;
+        border-radius: 50%;
+        padding: 0 5px;
+        position: relative;
+        left: -7px;
+        top: -15px;
+        opacity: 0.9;
+    }
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="navdiv">
-          <div class="logo">
+          <a class="logo" href="index.html">
             <img src="images/logo-no-background.png" alt="Logo" />
-          </div>
+          </a>
           <ul>
             <li>
-              <a href="#home" id="home">Home</a>
+              <a href="index.html" id="home">Home</a>
               <a href="#about" id="about">About</a>
-              <a href="#favourites">Favourites</a>
+              <a class="favourites" href="#favourites" value="0" id="favorites">Favourites</a>
             </li>
           </ul>
         </div>
@@ -260,6 +272,6 @@
       </div>
     </div>
     <script src="modal.js"></script>
-    <script src="homeRefresh.js"></script>
+    <script src="favButtonClick.js"></script>
   </body>
 </html>
