@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: bisque;
+  min-height: 100vh;
 }
 
 header {
-  height: 100vh;
+  height: auto;
   background-color: bisque;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +21,7 @@ header {
   --clr-neutral-900: hsl(212, 21%, 14%);
   --clr-neutral-400: hsl(228, 12%, 48%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --ff-base: font-family: 'Montserrat', sans-serif;
+  --ff-base: 'Montserrat', sans-serif;
   --fw-regular: 500;
   --fw-bold: 700;
 }
@@ -122,9 +123,6 @@ h3 {
   display: grid;
   gap: var(--content-spacing);
   padding: var(--content-padding);
-}
-
-.overview__category {
   font-size: 0.825rem;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -184,45 +182,51 @@ main {
   max-width: 1200px;
   margin: 10px auto;
 }
+
 .product__img img {
-width: auto;
- max-height: 200px;
- display: block;
- margin: 0 auto;
+  width: auto;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
 }
+
 .product__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.navbar{
-  position: -webkit-sticky;
+
+.navbar {
   position: sticky;
   top: 0;
+  background-color: var(--clr-neutral-100);
+  z-index: 1000;
 }
+
 .modal {
-  display: none; /* Hide the modal by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scrolling if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-body {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   border: 1px solid #888;
-  width: 950px; /* 80% width */
+  width: 950px;
   display: flex;
   flex-direction: column;
 }
 
 .modal-body > div {
-  padding:20px;
+  padding: 20px;
 }
 
 .modal-header {
@@ -237,47 +241,80 @@ width: auto;
   font-weight: bold;
   margin-left: auto;
 }
+
 .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .modal-footer-image{
-    width: 20%;
-    height: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .modal-content-text{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-  }
-  .modal-header-about{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 28px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-  }
-  .modal-content{
-    background-color: bisque;
-  }
-  .modal-footer{
-    background-color: bisque;
-  }
-  .footer{
-    box-sizing: border-box;
-  }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--clr-primary-500);
-    color: white;
-    text-align: center;
-  }
-  .footerElements a{
-    color: white;
-  }
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer-image {
+  width: 20%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.modal-header-about {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.modal-content {
+  background-color: bisque;
+}
+
+.modal-footer {
+  background-color: bisque;
+}
+
+.footer {
+  box-sizing: border-box;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--clr-primary-500);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: sticky;
+  bottom: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--clr-primary-500);
+}
+
+.footer li {
+  margin: 0 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
