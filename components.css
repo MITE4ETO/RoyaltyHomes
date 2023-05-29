@@ -202,6 +202,9 @@ main {
   top: 0;
   background-color: var(--clr-neutral-100);
   z-index: 1000;
+  font-family: calibri;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .modal {
@@ -287,8 +290,7 @@ main {
   color: white;
   text-align: center;
   padding: 30px;
-  position: sticky;
-  bottom: 0;
+  z-index: 9999; /* Increase the z-index to ensure it appears above other elements */
 }
 
 body {
@@ -304,6 +306,7 @@ body {
   background-color: var(--clr-primary-500);
 }
 
+
 .footer li {
   margin: 0 10px;
 }
@@ -317,4 +320,35 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
+}
+.sticky-footer{
+  position: sticky;
+  top: 100%;
+}
+
+/* NOVITE MODALI */
+
+
+
+
+.modal-header-suggestions {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.modal-header-careers {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.modal-header-realEstateAgents {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }

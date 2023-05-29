@@ -105,7 +105,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header style="position: -webkit-sticky; position: sticky;top: 0;">
       <nav class="navbar">
         <div class="navdiv">
           <div class="logo" href="index.html">
@@ -254,9 +254,11 @@
           </div>
         </article>
       </div>
-    </main>
-    <div class="modal" id="modal">
-      <div class="modal-body">
+
+
+      <div class="modal" id="modal-about">
+        <!-- Modal content for 'About' -->
+        <div class="modal-body">
         <div class="modal-header">
           <p class="modal-header-about">About</p>
           
@@ -270,12 +272,91 @@
           </div>
         </div>
       </div>
-    </div>
-    <footer class="footer">
+      </div>
+      
+      <div class="modal" id="modal-realEstateAgents">
+        
+        <div class="modal-body">
+          <div class="modal-header">
+            <p class="modal-header-realEstateAgents">Real Estate Agents</p>
+            
+          </div>
+          <div class="modal-content">
+            <p class="modal-content-text"> At RoaltyEstate, we take pride in providing exceptional service to our clients. 
+  With a team of dedicated and knowledgeable agents, 
+  you can count on us to navigate the complexities of the real estate market and find 
+  your dream property or sell your existing one with confidence. 
+  Trust RoaltyEstate for all your real estate needs.
+  </p> 
+            </div>
+            <div class="modal-footer-realEstateAgents">
+              <img class="modal-footer-image" src="images/logo-no-background.png">
+            </div>
+            
+          </div>
+        </div>
+  
+
+      </div>
+      
+      <div class="modal" id="modal-careers">
+        
+        <div class="modal-body">
+          <div class="modal-header">
+            <p class="modal-header-careers">Careers</p>
+            
+          </div>
+          <div class="modal-content">
+            <p class="modal-content-text"> At RoaltyEstate, we believe in fostering growth and nurturing talent. 
+  Our career section offers a platform for aspiring real estate professionals to thrive. 
+  Join our team of dedicated agents and unlock your potential in a dynamic and supportive environment.
+   With RoaltyEstate, you can build a rewarding career that opens doors to endless opportunities in the real estate industry.
+  </p> 
+            </div>
+            <div class="modal-footer">
+              <img class="modal-footer-image" src="images/logo-no-background.png">
+            </div>
+            
+          </div>
+        </div>
+  
+      </div>
+      
+      <div class="modal" id="modal-suggestions">
+       
+
+        <div class="modal-body">
+          <div class="modal-header">
+            <p class="modal-header-suggestions"> Suggestions</p>
+            
+          </div>
+          <div class="modal-content">
+            <p class="modal-content-text">At RoaltyEstate, we value the feedback and suggestions from our clients.
+    Our suggestion section is designed to provide a platform for our clients to share their thoughts and ideas.
+     We believe that your input is essential in shaping our services and improving our customer experience.
+      Together, we can create a real estate journey that exceeds your expectations.
+       Trust RoaltyEstate to listen and act upon your suggestions for a personalized and exceptional experience.
+  </p> 
+            </div>
+            <div class="modal-footer">
+              <img class="modal-footer-image" src="images/logo-no-background.png">
+            </div>
+            
+          </div>
+        </div>
+  
+      </div>
+      
+
+
+    </main>
+   
+    <footer class="footer sticky-footer">
       <ul>
-        <li><a href="#">Real Estate Agents</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Suggestions</a></li>
+        <li><a href="#realEstateAgents" id="realEstateAgents">Real Estate Agents</a></li>
+        <li><a href="#careers" id="careers">Careers</a></li>
+        <li><a href="#suggestions" id="suggestions">Suggestions</a></li>
+        
       </ul>
     </footer>
     <script src="modal.js"></script>
