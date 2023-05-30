@@ -1,11 +1,11 @@
 ## RoyaltyHomes
 ___
 
-Simple front-end website.
-It provides real estate client solutions.
-Not a lot of functions but new updates coming everyday.
-Modals involved.
-Everything including the logo is designed by me.
+* Simple front-end website.
+* It provides real estate client solutions.
+* Not a lot of functions but new updates coming everyday.
+* Modals involved.
+* Everything including the logo is designed by me.
 ___
 
 ## Technology used:
