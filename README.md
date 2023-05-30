@@ -9,9 +9,9 @@ ___
 ___
 
 ## Technology used:
-HTML
-CSS
-JS
+* HTML
+* CSS
+* JS
 
 ___
 ## Screenshots:
