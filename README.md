@@ -1,4 +1,4 @@
-RoyaltyHomes
+## RoyaltyHomes
 ___
 
 Simple front-end website.
@@ -8,7 +8,7 @@ Modals involved.
 Everything including the logo is designed by me.
 ___
 
-Technology used:
+## Technology used:
 HTML
 CSS
 JS
