@@ -1,4 +1,4 @@
-#RoyaltyHomes
+RoyaltyHomes
 
 Simple front-end website.
 It provides real estate client solutions.
@@ -6,7 +6,7 @@ Not a lot of functions but new updates coming everyday.
 Modals involved.
 Everything including the logo is designed by me.
 
-#Technology used:
+Technology used:
 HTML
 CSS
 JS
