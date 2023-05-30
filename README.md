@@ -14,7 +14,7 @@ ___
 * JS
 
 ___
-## Screenshots:
+### Screenshots:
 
 ![screenshot 1](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/3d22944d-0cf0-47fb-9350-a856c857428d)
 
