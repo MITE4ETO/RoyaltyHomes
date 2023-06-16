@@ -101,3 +101,5 @@ function showSuggestionModal() {
     '<img class="modal-footer-image" src="images/logo-no-background.png">';
   modalTemplate.style.display = "block";
 }
+
+console.log();
