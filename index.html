@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="carousel.css" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,7 +116,7 @@
             <li>
               <a href="index.html" id="home">Home</a>
               <a href="#about" id="about">About</a>
-              <a class="favourites" href="#favourites" value="0" id="favorites">Favourites</a>
+              <a href="#favourites" class="favourites" href="#favourites" value="0" id="favorites">Favourites</a>
             </li>
           </ul>
         </div>
@@ -124,49 +125,46 @@
     <main>
       <div class="products-container">
         <article class="product">
-          <picture class="product__img">
-            <img src="images/propertyRandom.png" alt="Amazing Home" />
-          </picture>
-
-          <div class="overview__content">
-            <p class="overview__category">Serial Number #11</p>
-
-            <h1 class="product__title">
-              Rancho Santa Fe, California, 92067 United States
-            </h1>
-
-            <p>
-              Crowning a 14-acre plateau in the picturesque hills of Rancho
-              Santa Fe’s exclusive Covenant, this iconic, gated sanctuary is
-              graced with rare 270° ocean and mountain views. Without sound
-              pollution. Free wine included :D :D
-            </p>
-
-            <div class="flex-group">
-              <p class="product__price">
-                <span class="visually-hidden">Current price:</span>
-                $450000
-              </p>
-              <div class="product__original-price">
-                <span class="visually-hidden">Original price:</span>
-                <s>$475000</s>
-              </div>
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/imot33.png" style="width:100%">
+              <div class="text">Caption Text</div>
             </div>
-            <button class="buttonFav">Add to favourites</button>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/imot34.png" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/imot35.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-        </article>
-        <article class="product">
-          <picture class="product__img">
-            <img src="images/imot33.png" alt="Amazing Home" />
-          </picture>
-
+          <br>
+        
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        
           <div class="overview__content">
             <p class="overview__category">Serial Number #22</p>
-
+        
             <h1 class="product__title">
               4900 N Grand Ave Unit 351, United States
             </h1>
-
+        
             <p>
               Great starter home in the heart of Covina!! Wonderful two
               bedroom, two baths with an open functional floorplan and tall
@@ -174,7 +172,7 @@
               living room features a fireplace and wood laminate flooring
               throughout. Amazing daylight.
             </p>
-
+        
             <div class="flex-group">
               <p class="product__price">
                 <span class="visually-hidden">Current price:</span>
@@ -188,11 +186,104 @@
             <button class="buttonFav">Add to favourites</button>
           </div>
         </article>
+        <article class="product">
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/imot33.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/imot34.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/imot35.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div class="overview__content">
+    <p class="overview__category">Serial Number #22</p>
+
+    <h1 class="product__title">
+      4900 N Grand Ave Unit 351, United States
+    </h1>
+
+    <p>
+      Great starter home in the heart of Covina!! Wonderful two
+      bedroom, two baths with an open functional floorplan and tall
+      ceilings. As you enter you'll find tons of natural light. the
+      living room features a fireplace and wood laminate flooring
+      throughout. Amazing daylight.
+    </p>
+
+    <div class="flex-group">
+      <p class="product__price">
+        <span class="visually-hidden">Current price:</span>
+        $499000
+      </p>
+      <div class="product__original-price">
+        <span class="visually-hidden">Original price:</span>
+        <s>$525000</s>
+      </div>
+    </div>
+    <button class="buttonFav">Add to favourites</button>
+  </div>
+</article>
 
         <article class="product">
-          <picture class="product__img">
-            <img src="images/imot22.png" alt="Amazing Home" />
-          </picture>
+
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/imot22.png" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/imot23.png" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/imot24.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
 
           <div class="overview__content">
             <p class="overview__category">Serial Number #33</p>
@@ -223,9 +314,33 @@
         </article>
 
         <article class="product">
-          <picture class="product__img">
-            <img src="images/imot11.png" alt="Amazing Home" />
-          </picture>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/imot11.png" style="width:100%">
+            </div> 
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/imot12.png" style="width:100%">          
+            </div>       
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/imot14.png" style="width:100%">              
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
 
           <div class="overview__content">
             <p class="overview__category">Serial Number #44</p>
@@ -277,6 +392,7 @@
     </footer>
     <script src="modal.js"></script>
     <script src="favButtonClick.js"></script>
+    <script src="coursel.js"></script>
     
     
   </body>
