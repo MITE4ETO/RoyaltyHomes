@@ -9,6 +9,8 @@ showSlides(); // Call the showSlides function to display the initial slide
 function plusSlides(index, n) {
   const slidesLength = 3;
 
+
+  // Implemented the logic
   if (index === 0) {
     slideIndex1 += n;
     if (slideIndex1 === 3) {
