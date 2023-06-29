@@ -16,11 +16,8 @@ ___
 ___
 ### Screenshots:
 
-![screenshot 1](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/3d22944d-0cf0-47fb-9350-a856c857428d)
-
-![screenshot 2](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/a0d948b5-05f8-4188-a663-af40d1d8c88a)
-
-![screenshot 3](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/b2c945bb-64ab-4392-827b-6321e9b54552)
-
-
+![Screenshot_1](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/05f6a849-2470-4282-87fa-73d702d33fd0)
+![Screenshot_2](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/4ec6c4fa-426e-4b1f-b595-7304f32f735c)
+![Screenshot_3](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/9a2bd318-23ca-4ed6-93e6-a8825eb5382e)
+![Screenshot_4](https://github.com/MITE4ETO/RoyaltyHomes/assets/126346506/dde6cdee-02ae-4750-86b3-3bac95951aa5)
 
