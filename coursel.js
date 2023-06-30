@@ -49,6 +49,8 @@ function currentSlide(n) {
   showSlides();
 }
 
+// slide functionality
+
 function showSlides() {
   let i;
   let slides1 = document.getElementsByClassName('mySlides1');
